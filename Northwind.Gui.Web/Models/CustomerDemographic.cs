@@ -9,5 +9,7 @@ namespace Northwind.Gui.Web.Models
     {
         public string CustomerTypeId { get; set; }
         public string CustomerDesc { get; set; }
+
+        public ICollection<CustomerCustomerDemo> CustomerCustomerDemos { get; set; }
     }
 }

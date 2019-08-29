@@ -7,7 +7,12 @@ namespace Northwind.Gui.Web.Models
 {
     public class CustomerCustomerDemo
     {
-        public Customer Customer { get; set; }
+        //Foreign key for Customer
+        //public string CustermerID { get; set; }
+        //public Customer Customer { get; set; }
+
+        //Foreign Key for CustomerDemographic
+        public string CustomerTypeID { get; set; }
         public CustomerDemographic CustomerDemographic { get; set; }
     }
 }

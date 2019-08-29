@@ -16,5 +16,15 @@ namespace Northwind.Gui.Web.Models
 
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Employee>().ToTable("Employee");
+            modelBuilder.Entity<Customer>().ToTable("Customer");
+
+            modelBuilder.Entity<Employee>();
+               
+               
+        }
     }
 }

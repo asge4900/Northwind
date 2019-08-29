@@ -10,6 +10,10 @@ namespace Northwind.Gui.Web.Models
     public class Employee
     {
         //[Column("ID")]
+        //[Column(TypeName ="")]
+        
+        //[Key] is used to identify a property as the primary key when the property name is something other than classnameID or ID
+
         public int EmployeeID { get; set; }
 
         [Required]
@@ -60,7 +64,9 @@ namespace Northwind.Gui.Web.Models
         [Display (Name = "Noter")]
         public string Notes { get; set; }
 
-        //public int ReportsTo { get; set; }
+        //[DisplayFormat(NullDisplayText = "")]
+        public int ReportsTo { get; set; }
+
         public string PhotoPath { get; set; }
 
         [Display (Name = "Initialer")]
@@ -73,6 +79,9 @@ namespace Northwind.Gui.Web.Models
                 return $"{FirstName} {LastName}";
             }
         }
+
+        public Employee Boss { get; set; }
+        public ICollection<Employee> BossEmployees { get; set; }
 
         public string GetShortDescription()
         {

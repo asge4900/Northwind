@@ -1,9 +1,0 @@
-C:\Users\asge4900\source\repos\Northwind\Northwind.DataAccess\bin\Debug\netcoreapp2.1\Northwind.DataAccess.deps.json
-C:\Users\asge4900\source\repos\Northwind\Northwind.DataAccess\bin\Debug\netcoreapp2.1\Northwind.DataAccess.dll
-C:\Users\asge4900\source\repos\Northwind\Northwind.DataAccess\bin\Debug\netcoreapp2.1\Northwind.DataAccess.pdb
-C:\Users\asge4900\source\repos\Northwind\Northwind.DataAccess\obj\Debug\netcoreapp2.1\Northwind.DataAccess.csprojAssemblyReference.cache
-C:\Users\asge4900\source\repos\Northwind\Northwind.DataAccess\obj\Debug\netcoreapp2.1\Northwind.DataAccess.csproj.CoreCompileInputs.cache
-C:\Users\asge4900\source\repos\Northwind\Northwind.DataAccess\obj\Debug\netcoreapp2.1\Northwind.DataAccess.AssemblyInfoInputs.cache
-C:\Users\asge4900\source\repos\Northwind\Northwind.DataAccess\obj\Debug\netcoreapp2.1\Northwind.DataAccess.AssemblyInfo.cs
-C:\Users\asge4900\source\repos\Northwind\Northwind.DataAccess\obj\Debug\netcoreapp2.1\Northwind.DataAccess.dll
-C:\Users\asge4900\source\repos\Northwind\Northwind.DataAccess\obj\Debug\netcoreapp2.1\Northwind.DataAccess.pdb

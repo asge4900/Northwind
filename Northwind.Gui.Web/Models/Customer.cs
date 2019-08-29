@@ -18,5 +18,7 @@ namespace Northwind.Gui.Web.Models
         public string Country { get; set; }
         public string Phone { get; set; }
         public string Fax { get; set; }
+
+        //public ICollection<CustomerCustomerDemo> CustomerCustomerDemos { get; set; }
     }
 }
