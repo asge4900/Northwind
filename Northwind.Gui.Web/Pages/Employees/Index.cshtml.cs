@@ -68,7 +68,8 @@ namespace Northwind.Gui.Web.Pages.Employees
 
             int pageSize = 3;
             Employee = await PaginatedList<Employee>.CreateAsync(
-                employeeIQ.AsNoTracking(), pageIndex ?? 1, pageSize);
+                employeeIQ.Include(e => e.Boss)
+                .AsNoTracking(), pageIndex ?? 1, pageSize);
 
             //Employee = await employeeIQ.AsNoTracking().ToListAsync();
         }

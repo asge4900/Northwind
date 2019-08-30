@@ -85,7 +85,10 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Employee[0].Notes)
-            </th>                     
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee[0].ReportsTo)
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -135,7 +138,10 @@
             </td>
             <td>
                 @item.GetShortDescription()
-            </td>           
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Boss.FullName)
+            </td>
             <td class="indexTdRow">
                 <a asp-page="./Edit" asp-route-id="@item.EmployeeID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.EmployeeID">Details</a> |

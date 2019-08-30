@@ -19,12 +19,13 @@ namespace Northwind.Gui.Web.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Employee>().ToTable("Employee");
-            modelBuilder.Entity<Customer>().ToTable("Customer");
+            modelBuilder.Entity<Employee>()
+                .HasOne(e => e.Boss)
+                .WithMany(e => e.BossEmployees)
+                .HasForeignKey(e => e.ReportsTo);
 
-            modelBuilder.Entity<Employee>();
-               
-               
+            modelBuilder.Entity<Customer>();
+
         }
     }
 }

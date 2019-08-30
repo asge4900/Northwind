@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Northwind.Gui.Web.Models
 {
+    //[Table("")]
     public class Employee
     {
         //[Column("ID")]
@@ -65,7 +66,7 @@ namespace Northwind.Gui.Web.Models
         public string Notes { get; set; }
 
         //[DisplayFormat(NullDisplayText = "")]
-        public int ReportsTo { get; set; }
+        public int? ReportsTo { get; set; }
 
         public string PhotoPath { get; set; }
 
@@ -80,8 +81,9 @@ namespace Northwind.Gui.Web.Models
             }
         }
 
-        public Employee Boss { get; set; }
-        public ICollection<Employee> BossEmployees { get; set; }
+        [ForeignKey("ReportsTo")]
+        public  Employee Boss { get; set; }
+        public  ICollection<Employee> BossEmployees { get; set; }
 
         public string GetShortDescription()
         {
