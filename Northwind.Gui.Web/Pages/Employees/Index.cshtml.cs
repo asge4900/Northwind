@@ -47,7 +47,9 @@ namespace Northwind.Gui.Web.Pages.Employees
             if (!string.IsNullOrEmpty(seachString))
             {                
                 employeeIQ = employeeIQ.Where(e => e.FullName.Contains(seachString, StringComparison.OrdinalIgnoreCase)                                        
-                                        || e.Initials.Contains(seachString, StringComparison.OrdinalIgnoreCase));
+                                        || e.Initials.Contains(seachString, StringComparison.OrdinalIgnoreCase)
+                                        //|| e.Region.Equals(seachString, StringComparison.OrdinalIgnoreCase)
+                                        || e.Country.Equals(seachString, StringComparison.OrdinalIgnoreCase));
             }
 
             switch (sortOrder)

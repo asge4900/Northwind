@@ -22,13 +22,10 @@
 </p>
 
 <form asp-page="./index" method="get">
-    <div class="form-actions no-color">
-        <p>
-            Søg efter navn:
-            <input type="text" name="SeachString" value="@Model.CurrentFilter" />
-            <input type="submit" value="Søg" class="btn btn-default" /> |
-            <a asp-page="./index">Back to full list</a>
-        </p>
+    <div class="form-actions no-color">                   
+        <input type="text" name="SeachString" value="@Model.CurrentFilter" placeholder="Søg navn, land"/>
+        <input type="submit" value="Søg" class="btn btn-default" /> |
+        <a asp-page="./index">Back to full list</a>      
     </div>
 </form>
 
