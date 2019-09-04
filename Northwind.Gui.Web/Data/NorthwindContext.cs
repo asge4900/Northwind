@@ -15,7 +15,8 @@ namespace Northwind.Gui.Web.Models
         }
 
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }        
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,6 +27,11 @@ namespace Northwind.Gui.Web.Models
 
             modelBuilder.Entity<Customer>();
 
-        }
+        }       
+
+
+        public DbSet<Northwind.Gui.Web.Models.Employment> Employment { get; set; }
+
+        
     }
 }

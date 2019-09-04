@@ -11,9 +11,10 @@ namespace Northwind.Gui.Web.Models
     //[Table("")]
     public class Employee
     {
+        private ICollection<Employment> employments;
         //[Column("ID")]
         //[Column(TypeName ="")]
-        
+
         //[Key] is used to identify a property as the primary key when the property name is something other than classnameID or ID
 
         public int EmployeeID { get; set; }
@@ -82,9 +83,27 @@ namespace Northwind.Gui.Web.Models
             }
         }
 
-        [ForeignKey("ReportsTo")]
+        //[ForeignKey("ReportsTo")]
         public  Employee Boss { get; set; }
         public  ICollection<Employee> BossEmployees { get; set; }
+
+        public ICollection<Employment> Employments { get => employments;
+            set
+            {              
+                employments.Where(e => e.EmployeeID == e.EmployeeID).OrderBy(e => e.HireDate);               
+
+                foreach (var employment in Employments)
+                {
+                    foreach (var item in Employments.Skip(1))
+                    {
+                        if (employment.HireDate < item.EndDate && item.HireDate < employment.EndDate)
+                        {
+
+                        }                        
+                    }
+                }
+            }
+        }
 
         public string GetShortDescription()
         {

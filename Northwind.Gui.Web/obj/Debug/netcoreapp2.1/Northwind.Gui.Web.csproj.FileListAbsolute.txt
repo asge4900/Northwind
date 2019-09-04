@@ -40,3 +40,8 @@ C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Customers\Details.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Customers\Edit.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Customers\Index.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Employments\Create.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Employments\Delete.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Employments\Details.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Employments\Edit.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Employments\Index.g.cshtml.cs

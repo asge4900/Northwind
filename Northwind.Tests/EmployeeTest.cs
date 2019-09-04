@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Northwind.Tests
 {
-    public class UnitTest1
+    public class EmployeeTest
     {
         [Fact]
         public void Test1()

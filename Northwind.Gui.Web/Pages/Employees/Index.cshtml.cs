@@ -48,7 +48,7 @@ namespace Northwind.Gui.Web.Pages.Employees
             {                
                 employeeIQ = employeeIQ.Where(e => e.FullName.Contains(seachString, StringComparison.OrdinalIgnoreCase)                                        
                                         || e.Initials.Contains(seachString, StringComparison.OrdinalIgnoreCase)
-                                        //|| e.Region.Equals(seachString, StringComparison.OrdinalIgnoreCase)
+                                        || (e.Region != null && e.Region.Equals(seachString, StringComparison.OrdinalIgnoreCase))
                                         || e.Country.Equals(seachString, StringComparison.OrdinalIgnoreCase));
             }
 
@@ -69,8 +69,8 @@ namespace Northwind.Gui.Web.Pages.Employees
             }
 
             int pageSize = 3;
-            Employee = await PaginatedList<Employee>.CreateAsync(
-                employeeIQ.Include(e => e.Boss)
+            Employee = await PaginatedList<Employee>.CreateAsync(employeeIQ
+                .Include(e => e.Boss)
                 .AsNoTracking(), pageIndex ?? 1, pageSize);
 
             //Employee = await employeeIQ.AsNoTracking().ToListAsync();
