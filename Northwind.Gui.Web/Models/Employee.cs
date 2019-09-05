@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -90,24 +91,22 @@ namespace Northwind.Gui.Web.Models
         public ICollection<Employment> Employments { get => employments;
             set
             {              
-                employments.Where(e => e.EmployeeID == e.EmployeeID).OrderBy(e => e.HireDate);               
+                employments.OrderBy(e => e.HireDate);
 
-                foreach (var employment in Employments)
+                for (int i = 1; i < employments.Count; i++)
                 {
-                    foreach (var item in Employments.Skip(1))
+                    if (employments.ElementAt(i).HireDate > employments.ElementAt(i-1).EndDate)
                     {
-                        if (employment.HireDate < item.EndDate && item.HireDate < employment.EndDate)
-                        {
 
-                        }                        
                     }
                 }
+                
             }
         }
 
         public string GetShortDescription()
         {
-            if(Notes.Length > 40)
+            if(Notes != null && Notes.Length > 40)
                 return Notes.Substring(0, 40) + "...";
             return Notes;
         }
