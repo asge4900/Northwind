@@ -12,3 +12,12 @@ C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\obj\Debug\netcoreapp2.1
 C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\bin\Debug\netcoreapp2.1\Northwind.Tests.pdb
 C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\obj\Debug\netcoreapp2.1\Northwind.Tests.dll
 C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\obj\Debug\netcoreapp2.1\Northwind.Tests.pdb
+C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\bin\Debug\netcoreapp2.1\Northwind.Gui.Web.Views.dll
+C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\bin\Debug\netcoreapp2.1\Northwind.Gui.Web.Views.pdb
+C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\bin\Debug\netcoreapp2.1\Northwind.Gui.Web.dll
+C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\bin\Debug\netcoreapp2.1\Northwind.Gui.Web.pdb
+C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\obj\Debug\netcoreapp2.1\Northwind.Tests.csproj.CopyComplete
+C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\bin\Debug\netcoreapp2.1\Northwind.Entities.dll
+C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\bin\Debug\netcoreapp2.1\Northwind.Services.dll
+C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\bin\Debug\netcoreapp2.1\Northwind.Entities.pdb
+C:\Users\asge4900\source\repos\Northwind\Northwind.Tests\bin\Debug\netcoreapp2.1\Northwind.Services.pdb

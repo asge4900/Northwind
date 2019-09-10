@@ -12,7 +12,7 @@ namespace Northwind.Gui.Web.Models
     //[Table("")]
     public class Employee
     {
-        private ICollection<Employment> employments;
+        private ICollection<Employment> employments;      
         //[Column("ID")]
         //[Column(TypeName ="")]
 
@@ -59,6 +59,7 @@ namespace Northwind.Gui.Web.Models
         [Display (Name = "Land")]
         public string Country { get; set; }
 
+        [DataType(DataType.PhoneNumber)]
         [Display (Name = "Hjemmetelefon")]
         public string HomePhone { get; set; }
         
@@ -90,15 +91,16 @@ namespace Northwind.Gui.Web.Models
 
         public ICollection<Employment> Employments { get => employments;
             set
-            {              
-                employments.OrderBy(e => e.HireDate);
+            {
+                var sortedEmployments = value.OrderBy(e => e.EmployeeID).ThenBy(e => e.HireDate).ToList();                
 
-                for (int i = 1; i < employments.Count; i++)
-                {
-                    if (employments.ElementAt(i).HireDate > employments.ElementAt(i-1).EndDate)
+                for (int i = 1; i < sortedEmployments.Count; i++)
+                {                    
+                    if (sortedEmployments[i].HireDate < sortedEmployments[i-1].EndDate && sortedEmployments[i].EmployeeID == sortedEmployments[i-1].EmployeeID)
                     {
-
+                        throw new ArgumentException("Dates cant overlap");
                     }
+                    employments = value;
                 }
                 
             }

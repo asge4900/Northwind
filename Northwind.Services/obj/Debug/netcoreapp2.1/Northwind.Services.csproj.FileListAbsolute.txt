@@ -1,0 +1,16 @@
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\bin\Debug\netcoreapp2.1\Northwind.Entities.dll
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\obj\Debug\netcoreapp2.1\Northwind.Services.csproj.CoreCompileInputs.cache
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\obj\Debug\netcoreapp2.1\Northwind.Services.AssemblyInfoInputs.cache
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\obj\Debug\netcoreapp2.1\Northwind.Services.AssemblyInfo.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\bin\Debug\netcoreapp2.1\Northwind.Services.deps.json
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\bin\Debug\netcoreapp2.1\Northwind.Services.dll
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\bin\Debug\netcoreapp2.1\Northwind.Services.pdb
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\bin\Debug\netcoreapp2.1\Northwind.Entities.pdb
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\obj\Debug\netcoreapp2.1\Northwind.Services.csprojAssemblyReference.cache
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\obj\Debug\netcoreapp2.1\Northwind.Services.csproj.CopyComplete
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\obj\Debug\netcoreapp2.1\Northwind.Services.dll
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\obj\Debug\netcoreapp2.1\Northwind.Services.pdb
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\asge4900\source\repos\Northwind\Northwind.Services\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Hosting.Abstractions.xml

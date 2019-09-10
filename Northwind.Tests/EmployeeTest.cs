@@ -1,5 +1,7 @@
 using Northwind.Gui.Web.Models;
+using Northwind.Gui.Web.Pages.Employees;
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace Northwind.Tests
@@ -37,26 +39,89 @@ namespace Northwind.Tests
             Assert.Equal(expected, actual);
         }
 
-        //[Fact]
-        //public void Periodsoverlap_shouldtrowexpextion()
-        //{
-        //    Employment employment1 = new Employment()
-        //    {
-        //        EmployeeID = 1,
-        //        HireDate = new DateTime(2000, 05, 10),
-        //        EndDate = new DateTime(2010, 05, 05)
-        //    };
+        [Fact]
+        public void PeriodsOverlapShouldThrowException()
+        {
+            Employment employment1 = new Employment()
+            {
+                EmployeeID = 1,
+                HireDate = new DateTime(2000, 05, 10),
+                EndDate = new DateTime(2010, 05, 05)
+            };
 
-        //    Employment employment2 = new Employment()
-        //    {
-        //        EmployeeID = 1,
-        //        HireDate = new DateTime(2005, 07, 13)
-        //    };
+            Employment employment2 = new Employment()
+            {
+                EmployeeID = 1,
+                HireDate = new DateTime(2005, 07, 13)
+            };
 
-        //    Employee employee = new Employee();
+            Employment employment3 = new Employment()
+            {
+                EmployeeID = 2,
+                HireDate = new DateTime(2010, 07, 13)
+            };
+
+            Employment employment4 = new Employment()
+            {
+                EmployeeID = 2,
+                HireDate = new DateTime(2004, 07, 13),
+                EndDate = new DateTime(2008, 07, 15)
+            };
+
+            Employee employee = new Employee();
+
+            List<Employment> employments = new List<Employment>()
+            {
+                employment1, employment2, employment3, employment4
+            };           
+
+            Exception ex = Assert.Throws<ArgumentException>(() => employee.Employments = employments);
+
+            Assert.Equal("Dates cant overlap", ex.Message);
+        }
 
 
-        //    Assert.Throws<ArgumentException>(() => employee.Employments);
-        //}
+        [Fact]
+        public void PeriodsNotOverlapShouldReturnValue()
+        {
+            Employment employment1 = new Employment()
+            {
+                EmployeeID = 1,
+                HireDate = new DateTime(2000, 05, 10),
+                EndDate = new DateTime(2010, 05, 05)
+            };
+
+            Employment employment2 = new Employment()
+            {
+                EmployeeID = 1,
+                HireDate = new DateTime(2015, 07, 13)
+            };
+
+            Employment employment3 = new Employment()
+            {
+                EmployeeID = 2,
+                HireDate = new DateTime(2010, 07, 13)
+            };
+
+            Employment employment4 = new Employment()
+            {
+                EmployeeID = 2,
+                HireDate = new DateTime(2005, 07, 13),
+                EndDate = new DateTime(2008, 07, 15)
+            };
+
+            Employee employee = new Employee();
+
+            List<Employment> employments = new List<Employment>()
+            {
+                employment1, employment2, employment3, employment4
+            };
+
+            employee.Employments = employments;
+
+
+            Assert.Equal(employments, employee.Employments);
+        }
+
     }
 }

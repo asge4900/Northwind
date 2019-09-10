@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Northwind.Gui.Web.Models;
+using Northwind.Services;
 
 namespace Northwind.Gui.Web.Pages.Employees
 {
@@ -32,6 +33,10 @@ namespace Northwind.Gui.Web.Pages.Employees
             {
                 return Page();
             }
+            //ValidatePhoneNumberService validatePhoneNumberService = new ValidatePhoneNumberService()
+            //{
+            //    Url = $"http://apilayer.net/api/validate?access_key=544d232503a19a4942312ba30064b3a3&number={Employee.HomePhone}&country_code=&format=1"
+            //};
 
             _context.Employees.Add(Employee);
             await _context.SaveChangesAsync();
