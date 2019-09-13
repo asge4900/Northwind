@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Northwind.Gui.Web.Models;
 
 namespace Northwind.Gui.Web.Pages.Employments
@@ -25,7 +26,7 @@ namespace Northwind.Gui.Web.Pages.Employments
         }
 
         [BindProperty]
-        public Employment Employment { get; set; }
+        public Employment Employment { get; set; }        
 
         public async Task<IActionResult> OnPostAsync()
         {
@@ -36,6 +37,8 @@ namespace Northwind.Gui.Web.Pages.Employments
 
             _context.Employment.Add(Employment);
             await _context.SaveChangesAsync();
+
+            //int lastID = Employment.EmploymentID;           
 
             return RedirectToPage("./Index");
         }

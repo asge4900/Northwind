@@ -69,8 +69,7 @@ namespace Northwind.Gui.Web.Pages.Employees
 
             bool error = false;
 
-            if (error == false)
-            {
+            
                 if (ValidateAddress.Status != "VALID")
                 {
                     error = true;
@@ -97,10 +96,7 @@ namespace Northwind.Gui.Web.Pages.Employees
                 _context.Employees.Add(Employee);
                 await _context.SaveChangesAsync();
 
-                return RedirectToPage("./Index");
-            }
-            else
-                return Page();
+                return RedirectToPage("./Index");           
            
         }
     }

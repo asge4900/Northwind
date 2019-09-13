@@ -62,7 +62,7 @@ using Northwind.Gui.Web;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(181, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d98ba7960ed344eb838a30523a2053ad", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66ed1da1dfca4ebe8a00a9ea9d6e371a", async() => {
                 BeginContext(202, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -152,7 +152,7 @@ using Northwind.Gui.Web;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1076, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f60e36b0d294f0b9832569467dcd782", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74214fdd60c64462b05cf6827cd7a060", async() => {
                 BeginContext(1131, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -187,7 +187,7 @@ using Northwind.Gui.Web;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1159, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c4caaabbe704599a9caf47fb44e264b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08bc007f20474428b4c009933016699f", async() => {
                 BeginContext(1217, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -222,7 +222,7 @@ using Northwind.Gui.Web;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1248, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "71580891fcc940969020c9d7674f8d54", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb79c768c22a4d62a1280c72ba92464f", async() => {
                 BeginContext(1305, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

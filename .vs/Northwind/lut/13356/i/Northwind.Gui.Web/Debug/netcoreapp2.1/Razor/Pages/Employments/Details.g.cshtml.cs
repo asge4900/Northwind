@@ -120,7 +120,7 @@ using Northwind.Gui.Web;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(873, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f9e584e96c3445eb7f18815ee14b40f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fddacdcdf63046abbc2ecb908de75bac", async() => {
                 BeginContext(940, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -155,7 +155,7 @@ using Northwind.Gui.Web;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(956, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d0914dea0024b569ea0327196c05ccc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a5831e3d39d46f1be62d1a0acdda47c", async() => {
                 BeginContext(978, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

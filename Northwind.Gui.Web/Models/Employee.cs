@@ -45,6 +45,7 @@ namespace Northwind.Gui.Web.Models
         //[DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = false)]
         //public DateTime HireDate { get; set; }
 
+       
         public int? EmploymentID { get; set; }
 
         public Employment Employment { get; set; }
