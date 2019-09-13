@@ -20,7 +20,7 @@ namespace Northwind.Gui.Web.Models
 
         public int EmployeeID { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Efternavn er påkrævet")]
         [Display(Name = "Efternavn")]
         [StringLength(20)]
         public string LastName { get; set; }        
@@ -34,31 +34,39 @@ namespace Northwind.Gui.Web.Models
 
         [Display(Name = "Titel")]
         public string TitleOfCourtesy { get; set; }
-
+        
         [Display(Name = "Fødselsdato")]
         [DataType(DataType.Date)]        
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = false)]
         public DateTime BirthDate { get; set; }
 
-        [DataType(DataType.Date)]
-        [Display(Name = "Ansættelsesdato")]        
-        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = false)]
-        public DateTime HireDate { get; set; }
+        //[DataType(DataType.Date)]
+        //[Display(Name = "Ansættelsesdato")]        
+        //[DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = false)]
+        //public DateTime HireDate { get; set; }
 
+        public int? EmploymentID { get; set; }
+
+        public Employment Employment { get; set; }
+
+        [Required(ErrorMessage = "Adresse er påkrævet")]
         [Display(Name = "Adresse")]
         public string Address { get; set; }
 
+        [Required(ErrorMessage = "By er påkrævet")]
         [Display(Name = "By")]
         public string City { get; set; }
 
         public string Region { get; set; }
 
+        [Required(ErrorMessage = "Postnummer er påkrævet")]
         [Display (Name = "Postnummer")]
         public string PostalCode { get; set; }
 
         [Display (Name = "Land")]
         public string Country { get; set; }
 
+        [Required(ErrorMessage = "Hjemmetelefon er påkrævet")]
         [DataType(DataType.PhoneNumber)]
         [Display (Name = "Hjemmetelefon")]
         public string HomePhone { get; set; }

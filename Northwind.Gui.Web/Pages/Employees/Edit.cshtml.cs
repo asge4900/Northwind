@@ -12,9 +12,9 @@ namespace Northwind.Gui.Web.Pages.Employees
 {
     public class EditModel : PageModel
     {
-        private readonly Northwind.Gui.Web.Models.NorthwindContext _context;
+        private readonly NorthwindContext _context;
 
-        public EditModel(Northwind.Gui.Web.Models.NorthwindContext context)
+        public EditModel(NorthwindContext context)
         {
             _context = context;
         }

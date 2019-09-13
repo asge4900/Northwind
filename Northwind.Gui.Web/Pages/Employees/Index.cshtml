@@ -56,7 +56,7 @@
             <th>
                 <a asp-page="./index" asp-route-sortOrder="@Model.DateSort"
                     asp-route-currentFilter="@Model.CurrentFilter">
-                    @Html.DisplayNameFor(model => model.Employee[0].HireDate)
+                    @Html.DisplayNameFor(model => model.Employee[0].Employment.HireDate)
                 </a>                   
             </th>
             <th>
@@ -110,7 +110,7 @@
                 @Html.DisplayFor(modelItem => item.BirthDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.HireDate)
+                @Html.DisplayFor(modelItem => item.Employment.HireDate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Address)

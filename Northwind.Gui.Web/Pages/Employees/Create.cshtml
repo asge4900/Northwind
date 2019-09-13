@@ -41,13 +41,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="Employee.BirthDate" class="control-label"></label>
-                <input asp-for="Employee.BirthDate" type="date" class="form-control" />
+                <input asp-for="Employee.BirthDate" value="@DateTime.Now.AddYears(-18).ToString("yyyy/MM/dd")" class="form-control" />
                 <span asp-validation-for="Employee.BirthDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Employee.HireDate" class="control-label"></label>
-                <input asp-for="Employee.HireDate" class="form-control" />
-                <span asp-validation-for="Employee.HireDate" class="text-danger"></span>
+                <label asp-for="Employee.Employment.HireDate" class="control-label"></label>
+                <input asp-for="Employee.Employment.HireDate" value="@DateTime.Now.ToString("yyyy/MM/dd")" class="form-control" />
+                <span asp-validation-for="Employee.Employment.HireDate" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Employee.Address" class="control-label"></label>
@@ -71,12 +71,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="Employee.Country" class="control-label"></label>
-                <input asp-for="Employee.Country" class="form-control" />
+                <select asp-for="Employee.Country" asp-items="Model.AvailableCountries" class="form-control"></select>
                 <span asp-validation-for="Employee.Country" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Employee.HomePhone" class="control-label"></label>
-                <input asp-for="Employee.HomePhone" type="tel"/>
+                <input asp-for="Employee.HomePhone" type="tel" class="form-control" />
                 <span asp-validation-for="Employee.HomePhone" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -90,10 +90,11 @@
                 <span asp-validation-for="Employee.Notes" class="text-danger"></span>
             </div>
             @*<div class="form-group">
-                <label asp-for="Employee.PhotoPath" class="control-label"></label>
-                <input asp-for="Employee.PhotoPath" class="form-control" />
-                <span asp-validation-for="Employee.PhotoPath" class="text-danger"></span>
-            </div>*@
+            <label asp-for="Employee.PhotoPath" class="control-label"></label>
+            <input asp-for="Employee.PhotoPath" class="form-control" />
+            <span asp-validation-for="Employee.PhotoPath" class="text-danger"></span>
+        </div>*@
+            @*@Html.ValidationSummary()*@
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>

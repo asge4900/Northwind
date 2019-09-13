@@ -26,7 +26,7 @@ namespace Northwind.Services
 
         private List<SelectListItem> LoadCountries()
         {
-            var fileInfo = _environment.ContentRootFileProvider.GetFileInfo("countries.json");
+            var fileInfo = _environment.ContentRootFileProvider.GetFileInfo("Json/countries.json");
 
             using (var stream = fileInfo.CreateReadStream())
             using (var streamReader = new StreamReader(stream))
@@ -35,6 +35,6 @@ namespace Northwind.Services
                 var serializer = new JsonSerializer();
                 return serializer.Deserialize<List<SelectListItem>>(jsonTextReader);
             }
-        }
+        }       
     }
 }

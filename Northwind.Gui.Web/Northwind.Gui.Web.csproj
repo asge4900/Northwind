@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Northwind.Services\Northwind.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Json\" />
+  </ItemGroup>
+
 </Project>

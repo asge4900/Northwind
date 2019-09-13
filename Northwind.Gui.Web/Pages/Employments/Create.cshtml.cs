@@ -11,16 +11,16 @@ namespace Northwind.Gui.Web.Pages.Employments
 {
     public class CreateModel : PageModel
     {
-        private readonly Northwind.Gui.Web.Models.NorthwindContext _context;
+        private readonly NorthwindContext _context;
 
-        public CreateModel(Northwind.Gui.Web.Models.NorthwindContext context)
+        public CreateModel(NorthwindContext context)
         {
             _context = context;
         }
 
         public IActionResult OnGet()
         {
-        ViewData["EmployeeID"] = new SelectList(_context.Employees, "EmployeeID", "LastName");
+        ViewData["EmployeeID"] = new SelectList(_context.Employees, "EmployeeID", "FullName");
             return Page();
         }
 

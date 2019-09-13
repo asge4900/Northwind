@@ -36,7 +36,7 @@ namespace Northwind.Gui.Web.Pages.Employments
             {
                 return NotFound();
             }
-           ViewData["EmployeeID"] = new SelectList(_context.Employees, "EmployeeID", "LastName");
+           ViewData["EmployeeID"] = new SelectList(_context.Employees, "EmployeeID", "FullName");
             return Page();
         }
 

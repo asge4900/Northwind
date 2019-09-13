@@ -58,19 +58,20 @@ namespace Northwind.Gui.Web.Pages.Employees
                     employeeIQ = employeeIQ.OrderByDescending(e => e.LastName);
                     break;
                 case "Date":
-                    employeeIQ = employeeIQ.OrderBy(e => e.HireDate);
+                    employeeIQ = employeeIQ.OrderBy(e => e.Employment.HireDate);
                     break;
                 case "date_desc":
-                    employeeIQ = employeeIQ.OrderByDescending(e => e.HireDate);
+                    employeeIQ = employeeIQ.OrderByDescending(e => e.Employment.HireDate);
                     break;
                 default:
                     employeeIQ = employeeIQ.OrderBy(e => e.LastName);
                     break;
             }
 
-            int pageSize = 3;
+            int pageSize = 100;
             Employee = await PaginatedList<Employee>.CreateAsync(employeeIQ
                 .Include(e => e.Boss)
+                .Include(e => e.Employment)
                 .AsNoTracking(), pageIndex ?? 1, pageSize);
 
             //Employee = await employeeIQ.AsNoTracking().ToListAsync();

@@ -25,8 +25,10 @@ namespace Northwind.Gui.Web.Models
                 .WithMany(e => e.BossEmployees)
                 .HasForeignKey(e => e.ReportsTo);
 
-            modelBuilder.Entity<Customer>();
-
+            modelBuilder.Entity<Employment>()
+                .HasOne(e => e.Employee)
+                .WithMany(e => e.Employments)
+                .HasForeignKey(e => e.EmploymentID);
         }       
 
 
