@@ -26,6 +26,11 @@ C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui
 C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\Employments\Index.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\OrderDetails\Create.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\OrderDetails\Delete.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\OrderDetails\Details.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\OrderDetails\Edit.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\OrderDetails\Index.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\Orders\Create.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\Orders\Delete.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\.vs\Northwind\lut\16780\i\Northwind.Gui.Web\Debug\netcoreapp2.1\Razor\Pages\Orders\Details.g.cshtml.cs

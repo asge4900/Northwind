@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Northwind.Gui.Web.Models;
+using Northwind.Gui.Web.Models.NorthwindViewModels;
 
 namespace Northwind.Gui.Web.Pages.Orders
 {
@@ -18,8 +19,7 @@ namespace Northwind.Gui.Web.Pages.Orders
             _context = context;
         }
 
-        public IList<Order> Order { get;set; }
-        public int OrderID { get; set; }
+        public IList<Order> Order { get; set; }   
         public string DateSort { get; set; }
 
         public async Task OnGetAsync(string sortOrder, int? id)
@@ -47,13 +47,9 @@ namespace Northwind.Gui.Web.Pages.Orders
                 .Include(o => o.Employee)
                 .Include(o => o.ShipViaNavigation)
                 .Include(o => o.OrderDetails)
+                    .ThenInclude(o => Order)
                 .Where(o => o.ShippedDate == null).Take(25)
-                .ToListAsync();
-
-            if (id != null)
-            {
-                OrderID = id.Value;
-            }
+                .ToListAsync();          
         }
     }
 }

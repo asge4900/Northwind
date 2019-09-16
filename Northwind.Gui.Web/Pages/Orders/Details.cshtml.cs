@@ -11,9 +11,9 @@ namespace Northwind.Gui.Web.Pages.Orders
 {
     public class DetailsModel : PageModel
     {
-        private readonly Northwind.Gui.Web.Models.NorthwindContext _context;
+        private readonly NorthwindContext _context;
 
-        public DetailsModel(Northwind.Gui.Web.Models.NorthwindContext context)
+        public DetailsModel(NorthwindContext context)
         {
             _context = context;
         }

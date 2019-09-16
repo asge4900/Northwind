@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int?}"
 @model Northwind.Gui.Web.Pages.Orders.IndexModel
 
 @{
@@ -19,7 +19,7 @@
             </th>
             <th>
                 <a asp-page="./index" asp-route-sortOrder="@Model.DateSort">
-                   @Html.DisplayNameFor(model=>model.Order[0].RequiredDate)
+                    @Html.DisplayNameFor(model => model.Order[0].RequiredDate)
                 </a>
             </th>
             <th>
@@ -59,53 +59,56 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Order) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.OrderDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RequiredDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShippedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Freight)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShipName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShipAddress)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShipCity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShipRegion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShipPostalCode)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShipCountry)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer.CustomerId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Employee.FullName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShipViaNavigation.CompanyName)
-            </td>
-            <td class="indexTdRow">
-                <a asp-page="./Edit" asp-route-id="@item.OrderId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.OrderId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.OrderId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Order)
+        {          
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequiredDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShippedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Freight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipCity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipRegion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipPostalCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipCountry)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.CustomerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShipViaNavigation.CompanyName)
+                </td>
+
+                <td class="indexTdRow">
+                    <a asp-page="./Index" asp-route-id="@item.OrderId">Select</a>
+                    <a asp-page="./Edit" asp-route-id="@item.OrderId">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.OrderId">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.OrderId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

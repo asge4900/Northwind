@@ -235,6 +235,9 @@ namespace Northwind.Gui.Web.Models
         public DbSet<Order> Order { get; set; }
 
 
+        public DbSet<Northwind.Gui.Web.Models.OrderDetail> OrderDetail { get; set; }
+
+
        
 
         
