@@ -5,14 +5,12 @@ using System.Threading.Tasks;
 
 namespace Northwind.Gui.Web.Models
 {
-    public class CustomerCustomerDemo
+    public partial class CustomerCustomerDemo
     {
-        //Foreign key for Customer
-        //public string CustermerID { get; set; }
-        //public Customer Customer { get; set; }
+        public string CustomerId { get; set; }
+        public string CustomerTypeId { get; set; }
 
-        //Foreign Key for CustomerDemographic
-        public string CustomerTypeID { get; set; }
-        public CustomerDemographic CustomerDemographic { get; set; }
+        public Customer Customer { get; set; }
+        public CustomerDemographic CustomerType { get; set; }
     }
 }

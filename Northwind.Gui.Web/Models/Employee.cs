@@ -115,6 +115,8 @@ namespace Northwind.Gui.Web.Models
             }
         }
 
+        public ICollection<Order> Orders { get; set; }
+
         public string GetShortDescription()
         {
             if(Notes != null && Notes.Length > 40)

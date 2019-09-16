@@ -20,11 +20,6 @@ C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Northwind.Gui.Web.RazorCoreGenerate.cache
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\About.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.g.cshtml.cs
-C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Customers\Create.g.cshtml.cs
-C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Customers\Delete.g.cshtml.cs
-C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Customers\Details.g.cshtml.cs
-C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Customers\Edit.g.cshtml.cs
-C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Customers\Index.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Employees\Create.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Employees\Delete.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Employees\Details.g.cshtml.cs
@@ -49,3 +44,8 @@ C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Northwind.Gui.Web.csproj.CopyComplete
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Northwind.Gui.Web.dll
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Northwind.Gui.Web.pdb
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Orders\Create.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Orders\Delete.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Orders\Details.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Orders\Edit.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Orders\Index.g.cshtml.cs

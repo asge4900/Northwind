@@ -1,13 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Northwind.Gui.Web.Models
 {
+    [Table("Customers")]
     public class Customer
-    {
-        public string CustomerID { get; set; }
+    {        
+        public Customer()
+        {
+            CustomerCustomerDemo = new HashSet<CustomerCustomerDemo>();
+            Orders = new HashSet<Order>();
+        }
+
+        public string CustomerId { get; set; }
         public string CompanyName { get; set; }
         public string ContactName { get; set; }
         public string ContactTitle { get; set; }
@@ -19,6 +27,7 @@ namespace Northwind.Gui.Web.Models
         public string Phone { get; set; }
         public string Fax { get; set; }
 
-        //public ICollection<CustomerCustomerDemo> CustomerCustomerDemos { get; set; }
+        public ICollection<CustomerCustomerDemo> CustomerCustomerDemo { get; set; }
+        public ICollection<Order> Orders { get; set; }
     }
 }

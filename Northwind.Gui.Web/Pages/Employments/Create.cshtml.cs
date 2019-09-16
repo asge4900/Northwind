@@ -38,7 +38,7 @@ namespace Northwind.Gui.Web.Pages.Employments
             _context.Employment.Add(Employment);
             await _context.SaveChangesAsync();
 
-            //int lastEmploymentID = Employment.EmploymentID;           
+            //int lastEmploymentID = Employment.EmploymentID;            
 
             return RedirectToPage("./Index");
         }
