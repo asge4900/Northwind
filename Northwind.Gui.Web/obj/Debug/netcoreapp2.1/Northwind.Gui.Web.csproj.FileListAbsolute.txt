@@ -54,3 +54,4 @@ C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\OrderDetails\Details.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\OrderDetails\Edit.g.cshtml.cs
 C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\OrderDetails\Index.g.cshtml.cs
+C:\Users\asge4900\source\repos\Northwind\Northwind.Gui.Web\obj\Debug\netcoreapp2.1\Razor\Pages\Orders\Select.g.cshtml.cs

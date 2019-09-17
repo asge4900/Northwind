@@ -45,9 +45,7 @@ namespace Northwind.Gui.Web.Pages.Orders
             Order = await orderIQ
                 .Include(o => o.Customer)
                 .Include(o => o.Employee)
-                .Include(o => o.ShipViaNavigation)
-                .Include(o => o.OrderDetails)
-                    .ThenInclude(o => Order)
+                .Include(o => o.ShipViaNavigation)                                    
                 .Where(o => o.ShippedDate == null).Take(25)
                 .ToListAsync();          
         }
