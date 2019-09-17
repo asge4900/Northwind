@@ -18,7 +18,7 @@ namespace Northwind.Gui.Web.Pages.Orders
             _context = context;
         }
 
-        public OrderDetail OrderDetail { get; set; }
+        public IList<OrderDetail> OrderDetail { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,7 +29,7 @@ namespace Northwind.Gui.Web.Pages.Orders
 
             OrderDetail = await _context.OrderDetail
                 .Include(o => o.Order)
-                .Include(o => o.Product).FirstOrDefaultAsync(m => m.OrderId == id);
+                .Include(o => o.Product).Where(m => m.OrderId == id).ToListAsync();
 
             if (OrderDetail == null)
             {

@@ -22,8 +22,7 @@ namespace Northwind.Gui.Web.Pages.Employees
         public string DateSort { get; set; }
         public string CurrentFilter { get; set; }
         public string CurrentSort { get; set; }       
-
-        //public IList<Employee> Employee { get;set; }
+        
 
         public PaginatedList<Employee> Employee { get; set; }
 
@@ -74,7 +73,7 @@ namespace Northwind.Gui.Web.Pages.Employees
                 .Include(e => e.Employment)
                 .AsNoTracking(), pageIndex ?? 1, pageSize);
 
-            //Employee = await employeeIQ.AsNoTracking().ToListAsync();
+           
         }
     }
 }

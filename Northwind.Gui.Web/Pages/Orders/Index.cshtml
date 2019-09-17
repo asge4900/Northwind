@@ -6,6 +6,12 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
+<style>
+    .body-content {
+        margin-left: 10%;
+    }
+</style>
+
 <h2>Index</h2>
 
 <p>
@@ -103,7 +109,7 @@
                 </td>
 
                 <td class="indexTdRow">
-                    <a asp-page="./Select" asp-route-id="@item.OrderId">Select</a>
+                    <a asp-page="./Select" asp-route-id="@item.OrderId">Order details</a>
                     <a asp-page="./Edit" asp-route-id="@item.OrderId">Edit</a> |
                     <a asp-page="./Details" asp-route-id="@item.OrderId">Details</a> |
                     <a asp-page="./Delete" asp-route-id="@item.OrderId">Delete</a>

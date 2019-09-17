@@ -18,6 +18,6 @@ namespace Northwind.Entities
         public double Rate { get => rate; set => rate = value; }
         public string Currency { get => currency; set => currency = value; }
 
-       
+        public Dictionary<string, double> Rates { get; set; }
     }
 }
